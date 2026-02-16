@@ -54,7 +54,13 @@ jobs:
       # Build and test the images
       - name: Run build-and-test.sh
         run: ./build_container.sh
-
+  # 2. 登录到 GitHub Container Registry
+      - name: Login to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
       # Deploy the images
       - name: Deploy
         if: ${{env.GHCR_PASSWORD != '' }}
