@@ -11,6 +11,10 @@ on:
   # Run at 00:52 UTC every Saturday
   schedule:
     - cron: '52 0 * * 6'
+# 权限配置 - 关键部分！
+permissions:
+  contents: read
+  packages: write  # 允许向 GitHub Packages 写入
 
 jobs:
   build-test-deploy:
