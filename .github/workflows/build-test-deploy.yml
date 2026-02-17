@@ -33,7 +33,7 @@ jobs:
     env:
       DISTRO_TO_BUILD: ubuntu-24.04
       TARGETPLATFORM: linux/amd64
-      REPO: south-polar-bear
+      REPO: wangbing1087
       DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
       DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       GHCR_USERNAME: ${{ github.actor }}
