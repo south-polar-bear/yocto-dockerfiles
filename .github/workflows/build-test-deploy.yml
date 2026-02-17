@@ -33,7 +33,7 @@ jobs:
     env:
       DISTRO_TO_BUILD: ubuntu-24.04
       TARGETPLATFORM: linux/amd64
-      REPO: wangbing1087
+      REPO: south-polar-bear/yocto-dockerfiles
       DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
       DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       GHCR_USERNAME: ${{ github.actor }}
