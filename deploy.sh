@@ -20,7 +20,7 @@ fi
 #    ${ENGINE_CMD} push $REPO:$DISTRO_TO_BUILD-base
 #    ${ENGINE_CMD} push $REPO:$DISTRO_TO_BUILD-builder
 
-#    ${ENGINE_CMD} tag $REPO:$DISTRO_TO_BUILD-base ghcr.io/$REPO:$DISTRO_TO_BUILD-base
+    ${ENGINE_CMD} tag $REPO:$DISTRO_TO_BUILD-base ghcr.io/$REPO:$DISTRO_TO_BUILD-base
 #    ${ENGINE_CMD} tag $REPO:$DISTRO_TO_BUILD-builder ghcr.io/$REPO:$DISTRO_TO_BUILD-builder
 
 #    echo $GHCR_PASSWORD | ${ENGINE_CMD} login ghcr.io -u $GHCR_USERNAME --password-stdin
