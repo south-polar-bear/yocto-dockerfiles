@@ -6,7 +6,7 @@
 #
 # This script is meant to be consumed by travis. It's very simple but running
 # a loop in travis.yml isn't a great thing.
-set -e
+
 set -x 
 
 # Allow the user to specify another command to use for building such as podman
